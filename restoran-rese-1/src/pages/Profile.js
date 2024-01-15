@@ -25,7 +25,6 @@ export default function Profile() {
                             </div>
                         </div>
                         <div class="col-lg-8">
-                           
                             <div class="row">
                                 <div class="col">
                                     <div class="card shadow mb-3">

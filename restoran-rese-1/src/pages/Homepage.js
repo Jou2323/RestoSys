@@ -1,27 +1,68 @@
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import OrderModal from '../function/OrderModal';
 
-    
-export default function Homepage() {
-    
+const HomePage = () => {
+  const [featuredItems, setFeaturedItems] = useState([]);
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
 
-    return(
+  useEffect(() => {
+    // Fetch featured items from the server or JSON file
+    axios.get('menu.json')
+      .then(response => setFeaturedItems(response.data.featuredItems))
+      .catch(error => console.error('Error fetching featured items:', error));
+  }, []);
 
-        
-        <body>
+  const handleOrderClick = (item) => {
+    setSelectedItem(item);
+    setIsOrderModalOpen(true);
+  };
+
+  const handleOrderSubmit = (orderData) => {
+    // Handle order submission, e.g., make an API request
+    console.log('Order submitted:', orderData);
+    setIsOrderModalOpen(false);
+  };
+
+  return (
+    <div>
+      <div  id="top-text" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <img src="/images/images.png" alt="Food" style={{ width: '50%', height: 'auto' }} />
+        <div style={{ width: '50%' }}>
+          <p>
+            On the main page of the restaurant, customers are in an atmosphere of hospitality and convenience,
+            getting access to various information about the establishment.
+            A convenient and informative interface provides the following general information.
+          </p>
+        </div>
+      </div>
+
+      <h3 style={{ textAlign: 'left',  }}>Featured Items</h3>
+      <div id="botte-text" style={{ display: 'flex', justifyContent: 'center', gap: '100px' }}>
+      <ul style={{ listStyle: 'none', padding: 0 }}>
+        {featuredItems.map(item => (
+          <li key={item.id}>
+            <div>
+            <img src={item.image} alt={item.name} style={{ width: '100px', height: 'auto' }} />
+            <p>{item.name}</p>
+            <p>Price: {item.price} грн</p>
+            <button onClick={() => handleOrderClick(item)}>Order</button>
             
-            <main class="page landing-page">
-                <section class="clean-block clean-hero" style={{color: (9, 162, 255, 0.85)}}>
-                    <div class="text">
-                        <h2>Головна сторінка</h2>
-                        <p>«Система підбору персоналу: представляємо нашу передову програму індивідуального підбору персоналу!»</p><Link class="btn btn-outline-light btn-lg" type="button" to="/Vacancy">Learn More</Link>
-                    </div>
-                </section>
-                </main>
-  
-            
-        </body>
-        
-  
-    )
-                                    
-}
+            </div>
+          </li>
+             ))}
+          </ul>
+      {/* Order Modal */}
+      <OrderModal
+        isOpen={isOrderModalOpen}
+        onRequestClose={() => setIsOrderModalOpen(false)}
+        onSubmit={handleOrderSubmit}
+        selectedItem={selectedItem}
+      />
+     </div>
+    </div>
+  );
+};
+
+export default HomePage;

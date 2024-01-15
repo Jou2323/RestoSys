@@ -36,3 +36,346 @@
     transform: rotate(360deg);
   }
 }
+/* Image */
+.App div > div > img{
+  transform:translatex(134px) translatey(0px);
+  padding-right:167px;
+ }
+ 
+ /* Paragraph */
+ .App div p{
+  transform:translatex(-19px) translatey(-5px);
+  color:#ffffff;
+ }
+ 
+ /* Heading */
+ .App div h3{
+  padding-left:55px;
+  transform:translatex(-4px) translatey(-24px);
+  color:#e7e7e8;
+ }
+ 
+ /* Container fluid */
+ .App .navbar .container-fluid{
+  background-color:#352b2b;
+ }
+ 
+ #accordionSidebar .nav-item span{
+  width:83px;
+ }
+ 
+ /* Nav link */
+ #accordionSidebar .nav-item .nav-link{
+  transform:translatex(0px) translatey(0px);
+  color:#ffffff;
+  background-color:#352b2b;
+ }
+ 
+ /* Navigation */
+ #root .App nav{
+  color:#352b2b;
+  transform:translatex(0px) translatey(0px);
+ }
+ 
+ /* App */
+ #root .App{
+  background-color:#604d4d;
+  transform:translatex(0px) translatey(0px);
+ }
+ 
+
+ 
+ /* Body */
+ body{
+  height:826px !important;
+  padding-bottom:6px;
+  width:100%;
+ }
+ 
+ /* Division */
+ .App > div > div{
+  background-color:#554848;
+  margin-top:1px;
+  margin-bottom:12px;
+  transform:translatex(-4px) translatey(-24px);
+ }
+ 
+ /* List Item */
+ .App div div li{
+  width:236px;
+  transform:translatex(12px) translatey(5px);
+  display:inline-block;
+ }
+ 
+ /* Paragraph */
+ .App li p{
+  transform:translatex(-13px) translatey(6px);
+ }
+ 
+ /* Button */
+ .App li button{
+  transform:translatex(-10px) translatey(-9px);
+ }
+ 
+ /* Image */
+ .App li img{
+  display:inline-block;
+  transform:translatex(-15px) translatey(0px);
+ }
+ 
+ /* Heading */
+.ReactModalPortal .ReactModal__Overlay .ReactModal__Content h2{
+  width:52% !important;
+ }
+ 
+ /* Heading */
+ .ReactModalPortal h2{
+  transform:translatex(111px) translatey(-3px);
+  text-align:center;
+  color:#040405;
+ }
+ 
+ /* Division */
+ .ReactModalPortal .ReactModal__Content{
+  width:470px;
+  transform:translatex(429px) translatey(54px);
+  height:462px;
+  background-color:#bababa !important;
+  border-style:none !important;
+  border-width:11px;
+ }
+ 
+ /* Input */
+ .ReactModalPortal input[type=text]{
+  width:438px;
+  transform:translatex(0px) translatey(0px);
+  min-height:51px;
+  border-width:0px;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+ }
+ 
+ /* Button */
+ .ReactModalPortal button{
+  transform:translatex(82px) translatey(270px);
+  min-height:45px;
+  width:216px;
+  height:97px;
+  background-color:#902c2c !important;
+  border-top-left-radius:15px !important;
+  border-top-right-radius:15px !important;
+  border-bottom-left-radius:15px !important;
+  border-bottom-right-radius:15px !important;
+ }
+ 
+ /* Label */
+ .ReactModalPortal label{
+  color:#000000;
+ }
+ 
+ /* Division */
+.ReactModalPortal .ReactModal__Content{
+  transform:translatex(342px) translatey(20px);
+  width:504px;
+ }
+ 
+ /* Button */
+ .ReactModalPortal button{
+  transform:translatex(115px) translatey(45px);
+ }
+ 
+ /* Order history */
+#order_history{
+  width:66%;
+  transform:translatex(225px) translatey(-20px);
+ }
+ 
+ /* Table history */
+ #table_history{
+  width:907px;
+  transform:translatex(214px) translatey(-18px);
+ }
+ 
+ /* Heading */
+ #order_history h2{
+  transform:translatex(0px) translatey(4px);
+  font-style:normal;
+  text-transform:none;
+  text-align:left;
+ }
+ 
+ /* Head Of Table */
+ #order_history table thead{
+  min-height:60px;
+ }
+ 
+ /* Table */
+ #order_history table{
+  background-size:cover;
+  width:100%;
+ }
+ 
+ /* Heading */
+ #table_history h2{
+  text-align:left;
+  background-size:auto;
+ }
+ 
+ /* Table */
+ #table_history table{
+  width:100%;
+ }
+ 
+ @media (min-width:1200px){
+ 
+  /* Heading */
+  #order_history h2{
+   font-size:35px;
+  }
+  
+ }
+ /* Division */
+#root .App > div{
+  min-height:685px;
+ }
+ 
+ /* Order history */
+#order_history{
+  transform:translatex(158px) translatey(76px);
+  width:1105px;
+  min-height:220px;
+  color:#000000;
+  background-color:#b7b7b7;
+ }
+ 
+ /* Table history */
+ #table_history{
+  transform:translatex(157px) translatey(115px);
+  width:1105px;
+  min-height:228px;
+ }
+ 
+ /* Heading */
+ #order_history h2{
+  color:#000000;
+  transform:translatex(0px) translatey(-43px);
+ }
+ 
+ /* Heading */
+ .App div h3{
+  transform:translatex(161px) translatey(26px);
+  color:#000000;
+  padding-left:0px;
+  width:10%;
+  text-decoration:none;
+  text-shadow:rgba(0, 0, 0, 0.3) 0px 1px 1px;
+ }
+ 
+ /* App */
+ #root .App{
+  background-color:#cdcaca;
+ }
+ 
+ /* Heading */
+ #table_history h2{
+  transform:translatex(0px) translatey(-45px);
+  color:#000000;
+ }
+ 
+ /* Th */
+ #order_history tr th{
+  transform:translatex(0px) translatey(-49px);
+ }
+ 
+ /* Table Data */
+ #order_history tr td{
+  transform:translatex(0px) translatey(-42px);
+ }
+ 
+ @media (min-width:1200px){
+ 
+  /* Heading */
+  .App div h3{
+   font-size:38px;
+  }
+  
+ }
+ /* Table */
+#table_history table{
+  transform:translatex(0px) translatey(-44px);
+ }
+ 
+ #table_history tr th{
+  color:#000000;
+ }
+ 
+ /* Table Data */
+ #table_history tr td{
+  color:#000000;
+ }
+ 
+ /* Table history */
+ #table_history{
+  background-color:#b7b7b7;
+ }
+ 
+ /* Container fluid */
+.App .navbar .container-fluid{
+  background-color:#352b2b;
+ }
+ 
+ /* Table Data */
+ #order_history tr td{
+  background-color:#352b2b;
+  color:#f9f9f9;
+  transform:translatex(0px) translatey(-52px);
+ }
+ 
+ /* Th */
+ #order_history tr th{
+  background-color:#352b2b;
+  color:#ffffff;
+ }
+ 
+/* Th */
+#table_history tr th{
+  color:#ffffff;
+  background-color:#352b2b;
+  transform:translatex(0px) translatey(0px);
+ }
+ 
+ /* Table Data */
+ #table_history tr td{
+  color:#ffffff;
+  background-color:#352b2b;
+ }
+ 
+ /* Th */
+ #order_history tr th{
+  background-color:#352b2b;
+ }
+ 
+  /* Heading */
+.App div h3{
+  transform:translatex(137px) translatey(-26px);
+  width:285px;
+ }
+ 
+ /* Top text */
+ #top-text{
+  width:100%;
+ }
+ 
+ /* Botte text */
+ #botte-text{
+  min-height:421px;
+ }
+ 
+ /* Division */
+ #botte-text ul div{
+  transform:translatex(-203px) translatey(9px);
+ }
+ 
+ 

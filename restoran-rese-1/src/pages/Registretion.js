@@ -17,7 +17,7 @@ const Registretion = () => {
        }
        const onSubmitAdd=async (e)=>{
            e.preventDefault();
-           await axios.post("http://localhost:8080/recruiters/register",recruiter)
+           await axios.post("",recruiter)
            navigate("/Homepages");
           };
   
