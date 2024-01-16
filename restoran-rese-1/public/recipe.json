@@ -1,0 +1,15 @@
+[
+    {
+      "id": 1,
+      "recipeName": "Pasta Carbonara",
+      "category": "Italian",
+      "ingredients": ["Spaghetti", "Eggs", "Bacon", "Parmesan Cheese"]
+    },
+    {
+      "id": 2,
+      "recipeName": "Chicken Curry",
+      "category": "Indian",
+      "ingredients": ["Chicken", "Curry Sauce", "Rice"]
+    }
+  ]
+  

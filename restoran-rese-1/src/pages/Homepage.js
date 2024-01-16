@@ -3,15 +3,18 @@ import axios from 'axios';
 import OrderModal from '../function/OrderModal';
 
 const HomePage = () => {
-  const [featuredItems, setFeaturedItems] = useState([]);
+  const [menuItems, setMenuItems] = useState([]);
+
   const [selectedItem, setSelectedItem] = useState(null);
   const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
 
   useEffect(() => {
-    // Fetch featured items from the server or JSON file
-    axios.get('menu.json')
-      .then(response => setFeaturedItems(response.data.featuredItems))
-      .catch(error => console.error('Error fetching featured items:', error));
+    axios.get('http://localhost:8080/api/menu')
+      .then(response => {
+        console.log('API Response:', response.data);
+        setMenuItems(response.data);
+      })
+      .catch(error => console.error('Error fetching menu:', error));
   }, []);
 
   const handleOrderClick = (item) => {
@@ -41,7 +44,7 @@ const HomePage = () => {
       <h3 style={{ textAlign: 'left',  }}>Featured Items</h3>
       <div id="botte-text" style={{ display: 'flex', justifyContent: 'center', gap: '100px' }}>
       <ul style={{ listStyle: 'none', padding: 0 }}>
-        {featuredItems.map(item => (
+        {menuItems.map(item => (
           <li key={item.id}>
             <div>
             <img src={item.image} alt={item.name} style={{ width: '100px', height: 'auto' }} />

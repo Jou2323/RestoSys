@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "tableNumber": 1,
+      "seats": 4,
+      "location": "Вікно",
+      "status": "Зайнятий"
+    },
+    {
+      "id": 2,
+      "tableNumber": 2,
+      "seats": 2,
+      "location": "Куточок",
+      "status": "Вільний"
+    }
+  ]
+  

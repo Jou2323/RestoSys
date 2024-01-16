@@ -8,7 +8,6 @@ import Homepage from "./pages/Homepage";
 import Profile from "./pages/Profile";
 import Registretion from "./pages/Registretion";
 import OrderModal from "./function/OrderModal";
-import ParentComponent from "./function/ParentComponent";
 import TableReservationModal from "./function/TableReservationModal";
 import Historypage from "./pages/Historypage";
 import OrderHistory from "./function/OrderHistory";
@@ -30,7 +29,6 @@ function App() {
             <Route exact path='/TableHistory' element={<TableHistory/>}/>
             <Route exact path="/Profile" element={<Profile/>}/>
             <Route exact path="/OrderModal" element={<OrderModal/>}/>
-            <Route exact path="/ParentComponent" element={<ParentComponent/>}/>
             <Route exact path="/KitchenPage" element={<KitchenPage/>}/>
             <Route exact path="/OrderList" element={<OrderList/>}/>
             <Route exact path="/RecipeList" element={<RecipeList/>}/>

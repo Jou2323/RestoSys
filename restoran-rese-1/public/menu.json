@@ -1,0 +1,25 @@
+
+
+{
+    "featuredItems": [
+      {
+        "id": 1,
+        "name": "Овочевий салат із козячою бринзою",
+        "price": 10.99,
+        "image": "/images/img1.png"
+      },
+      {
+        "id": 2,
+        "name": "Momofuku Ko",
+        "price": 15.99,
+        "image": "/images/img2.png"
+      },
+      {
+        "id": 3,
+        "name": "Сирний рол зі смаженим лососем",
+        "price": 50.00,
+        "image": "/images/img3.png"
+      }
+    ]
+  }
+  
